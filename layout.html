@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+         .wrapper{
+                  height: 20vh;
+                display: grid;
+                grid-gap:1rem;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: repeat(4,1fr);
+                grid-template-areas:"nav nav nav"
+                                    "side con1 con2"
+                                    "side con3 con4"
+                                    "footer footer footer";
+                 }
+         .wrapper>div{
+            background-color: coral;
+            padding: 50px;
+        
+
+         }  
+
+         .wrapper>div:nth-child(odd)
+         {
+            background-color: chocolate;
+
+         }
+         #navbar {
+            grid-area: nav;
+            background-color: rgb(0, 102, 255);
+        
+         }
+         #side{
+            grid-area: side;
+            background-color: blueviolet;
+            
+         }
+         #footer{
+            grid-area: footer;
+            background-color: crimson;
+         }
+          
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+
+
+            <div id="navbar">
+                <marquee behaviour="alternate" direction="right"><h1><u>Heyyy all!!! welcome to my layout</u></h1></marquee>
+            <a href="file:///C:/Users/HP/Desktop/kanini%20HTML/animation.html">click here to my animation</a>
+            </div>
+    <div id="side"><div>
+        <h1>Family</h1>
+        <img src="family.jpg" alternate="first" height="100" width="100">
+        </div>
+        <h5 >Family is one of the most important, if not the most important thing in our lives. 
+            Taking time every day to appreciate your loved ones for all that they do helps us 
+            to reconnect as a family. For that reason, we ve provided a collection of our 
+            favorite family quotes and sayings that remind us of the love shared between family members.
+             These family quotes and 
+            family sayings are perfect to celebrate your love for your family members.</h5>
+    </div>
+    <div id="con1"><div>
+        <h2>father</h2>
+        <img src="father.jpg" alternate="first" height="100" width="100"></div>
+    <h5>Behind every great daughter is a truly amazing dad.” 
+        “Dear Daddy, no matter where I go in life, you'll always be my number one man.”
+        “There is this girl who stole my heart and she calls me Daddy.”
+        “A father holds his daughter's hand for a short while, but he holds her heart forever.” </h5></div>
+    <div id="con2"> <div>
+        <h1>mother</h1>
+        <img src="mother.jpg"alternate="first" height="100" width="100" >
+        </div>
+    <h5>
+        My mother is a walking miracle.” 
+“A mother understands what a child does not say.”
+“The world needs our mothers.”
+“A mother's hug lasts long after she lets go.”
+“There is nothing as sincere as a mother's kiss.”
+“Life began with waking up and loving my mother's face.” 
+
+    </h5></div>
+    <div id="con3">
+        <div><h1>brothr </h1>
+            <img src="brother.jpg" alternate="first" height="100" width="150">
+            </div>
+    <h5>
+        He knows that there's no better way in the world to aggravate somebody 
+        who's trying to make it hard for you than by acting like you're not bothered.” 
+        “Never waste time for someone who doesn't 
+        bother to spend time with you, but with someone who will say, time is wasted if I'm not with you.”
+    </h5></div>
+    <div id="con4"> <div>
+        <h1>sister</h1>
+        <img src="sisters.jpg" alternate="first" height="100" width="50" >
+        </div>
+    <h5>Having a sister is like having a best friend you can't get rid of. ...
+        “I could never love anyone as I love my sisters.” ...
+        “A sister can be seen as someone who is both ourselves and 
+        very much not ourselves—a special kind of double.”</h5></div>
+    <div id="footer"><marquee behaviour="alternate" direction="right">
+        <h1>thank u</h1>
+    </marquee>
+    <img src="data:image/jpeg;base64,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" heigth="100" width="100">
+</div>
+
+    </div>
+</div>
+
+    
+</body>
+</html>
